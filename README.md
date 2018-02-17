@@ -1,4 +1,4 @@
-# dawson ![GoDoc](https://godoc.org/gorgonia.org/dawson?status.svg)](https://godoc.org/gorgonia.org/tensor) [![GitHub version](https://badge.fury.io/gh/gorgonia%2Fdawson.svg)](https://badge.fury.io/gh/gorgonia%2Fdawson) [![Go Report Card](https://goreportcard.com/badge/gorgonia.org/dawson)](https://goreportcard.com/report/gorgonia.org/dawson) [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)#
+# dawson ![GoDoc](https://godoc.org/gorgonia.org/dawson?status.svg)](https://godoc.org/gorgonia.org/dawson) [![GitHub version](https://badge.fury.io/gh/gorgonia%2Fdawson.svg)](https://badge.fury.io/gh/gorgonia%2Fdawson) [![Go Report Card](https://goreportcard.com/badge/gorgonia.org/dawson)](https://goreportcard.com/report/gorgonia.org/dawson) [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges) #
 package `dawson` is a package that provides utilities for testing involving floats.
 
 # Usage #
