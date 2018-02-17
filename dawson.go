@@ -33,7 +33,7 @@ func ToleranceF64(a, b, e float64) bool {
 	return d < e
 }
 
-// TolereranceF64 is a test to see if two float64s, a and b are equal,
+// TolereranceF32 is a test to see if two float64s, a and b are equal,
 // within the specified tolerance e.
 // 		a: actual value
 //		b: expected value
@@ -59,7 +59,7 @@ func ToleranceF32(a, b, e float32) bool {
 	return d < e
 }
 
-// TolereranceC128 is a test to see if two float64s, a and b are equal,
+// ToleranceC128 is a test to see if two float64s, a and b are equal,
 // within the specified tolerance e.
 // 		a: actual value
 //		b: expected value
@@ -87,7 +87,7 @@ func CloseEnoughF64(a, b float64) bool { return ToleranceF64(a, b, 1e-8) }
 // CloseF64 checks that a and b are within 1e-14 tolerance.
 func CloseF64(a, b float64) bool { return ToleranceF64(a, b, 1e-14) }
 
-// SoCloseF64 checks that a and b are within 4e-16 tolerance.
+// VeryCloseF64 checks that a and b are within 4e-16 tolerance.
 func VeryCloseF64(a, b float64) bool { return ToleranceF64(a, b, 4e-16) }
 
 // AlikeF64 checks that a and b are alike:
@@ -108,7 +108,7 @@ func AlikeF64(a, b float64) bool {
 // By contrast, Haskell's Linear package uses 1e-6 for floats
 func CloseF32(a, b float32) bool { return ToleranceF32(a, b, 1e-5) }
 
-// CloseF34 checks that a and b are within 1e-6 tolerance.
+// VeryCloseF32 checks that a and b are within 1e-6 tolerance.
 // This number was acquired from Haskell's linear package, as well as wikipedia
 func VeryCloseF32(a, b float32) bool { return ToleranceF32(a, b, 1e-6) }
 
@@ -128,7 +128,7 @@ func AlikeF32(a, b float32) bool {
 // CloseC128 checks that a and b are within 1e-14 tolerance
 func CloseC128(a, b complex128) bool { return ToleranceC128(a, b, 1e-14) }
 
-// CloseEnoughC128 checks that a and b are within 1e-16 tolerance
+// VeryCloseC128 checks that a and b are within 1e-16 tolerance
 func VeryCloseC128(a, b complex128) bool { return ToleranceC128(a, b, 4e-16) }
 
 // AlikeC128 checks that a and b are alike:
