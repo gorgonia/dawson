@@ -30,7 +30,7 @@ func ToleranceF64(a, b, e float64) bool {
 			e = -e
 		}
 	}
-	return d < e
+	return d <= e
 }
 
 // TolereranceF32 is a test to see if two float64s, a and b are equal,
@@ -56,7 +56,7 @@ func ToleranceF32(a, b, e float32) bool {
 			e = -e
 		}
 	}
-	return d < e
+	return d <= e
 }
 
 // ToleranceC128 is a test to see if two float64s, a and b are equal,
